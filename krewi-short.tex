@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\input{config/config.tex}
+
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\DefTblrTemplate{head}{default}{} %remove table head
+\DefTblrTemplate{contfoot-text}{default}{\footnotesize{\emph{Cont.}}}
+\DefTblrTemplate{note-tag}{default}{\rmfamily{\textsuperscript{\InsertTblrNoteTag}}}
+\DefTblrTemplate{note-text}{default}{\small{\InsertTblrNoteText}}
+
+\SetTblrOuter{long}
+
+\usepackage[protrusion=true,expansion]{microtype}
+\linespread{1.5}
+
+\usepackage{graphicx} 
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+
+\usepackage{subcaption}
+\captionsetup{
+   font={footnotesize},
+width=0.8\textwidth,
+}
+
+%\usepackage{showframe}
+
+\newcommand{\todo}{\marginpar{\sc{todo}}}
+
+%%%Glossary commands
+\newcommand{\dic}[3]{\textbf{#1} {\textsc{#2}} #3 \\}
+
+\title{Krewi}
+\author{seven vulpa}
+
+\begin{document}
+\maketitle
+
+% \include{contents/00-intro.tex}
+% \include{contents/01-phonoortho.tex}
+% \include{contents/02-genmorpho.tex}
+% \include{contents/02-lexcat.tex}
+% \include{contents/03-nouns.tex}
+
+\section{Form I}
+Form I is the base form and considered ``the dictionary form''. As a noun, the word has inherent meaning of thematic in relation with the verb. As a verb, the word appears to be intransitive or transitive.
+
+\subsection{Examples}
+Form I
+
+\ex \vtop{\halign{%
+		#\hfil&& \qquad #\hfil\cr
+		\emph{cenay}& `read, literature' \cr
+		\emph{dehar}& `heat, hot air' \cr
+		\emph{neran}& `remedy, medicine' \cr
+	}}\xe
+
+\include{glossary.tex}
+
+\end{document}
+

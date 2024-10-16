@@ -1,0 +1,95 @@
+\section{Phonology}%
+
+\subsection{Consonant}%
+Krewi consonants are divided into 11 contrastive units as depicted in the matrix provided below. Phonemes in brackets are borrowed-origin.
+
+\begin{longtblr}[
+		halign = c,
+	]{
+		rowhead = 1,
+		vline{2} = {0.5pt},
+		hline{2} = {0.5pt}
+	}
+	\toprule[1pt]
+	                   & \small{labial} & \small{lingual (tip)} & \small{lingual (dorsum)} & \small{glottal} \\
+	\small{nasal}      & m              & n                     &                          &                 \\
+	\small{obstruents} &                & d dz                  & (dʒ)                     & x ħ (k)         \\
+	\small{emphatics}  &                & ts                    & ɟʝ (tɕ)                  & kʷ kʲ           \\
+	\small{continuant} & w [w ʝʷ]       & l r                   & j [j ɟ]                  &                 \\
+	\bottomrule[1pt]
+\end{longtblr}
+
+Observed allophones are as follows.
+
+\begin{itemize}
+	\item Nasal /n/ can be further analyzed into two phonemes. The onset /n/ is a fairly stable phoneme which has no allophone. Meanwhile, coda /n/ allophones surface homorganically depending on the context. Coda /n/ shift the articulatory point to match the next, usually less sonorous, onset. Such phenomenon are, namely, dorsal nasal (e.g. \mbox{ɣəɲ.ɟaj}) and glottal nasal (e.g \mbox{tsɤŋ.ɡaw}). In some cases, final /n/ may surfaces the pausal form derived from the retracted point of the onset (e.g. \mbox{wɛ.raɲː}).
+	\item Native obstruents, in exception of /ħ/, realize in many degree of strength. Beside the condition whichever plain [d dz x] occur, tense [t k] are only realized before laterals [l r]. Lax [ɾ z h\textasciitilde Ø] are only realized in intervocalic conditions. Labialized [tʷ ɡʷ] are only realized in the stop + semivowel [w] sequence. Meanwhile, the presence of the semivowel [j] turns obstruents into supra-tense emphatics [ɟʝ kʲ], but despite the relatedness, they fall into different phonemes.
+	\item Non-native Peninsular dorsals /dʒ tɕ/ are pronounced by analogy of [dz ɟʝ] with retracted alticulatory point.
+
+
+\end{itemize}
+
+\subsection{Vowel}
+Krewi vowels had four native phonemic monophthongs /i ə a ɤ/ and one long /eː/ which exists in loanwords.
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (e) at (0,0) {};
+		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (i) at (-2,2) {};
+		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (o) at (2,1) {};
+
+		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (a) at (0,-1) {};
+		\node[above=2pt of e] {ə};
+		\node[left=2pt of i] {i};
+		\node[right=2pt of o] {ɤ};
+		\node[left=2pt of a] {a};
+		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (ee) at ($(i)!0.4!(a)$) {};
+		\node[left=2pt of ee] {(eː)};
+
+		\draw (e) -- (i) -- (o) -- (e);
+		\draw (a) -- (e);
+		\draw (i) -- (a);
+	\end{tikzpicture}
+	\caption{Mapped vowels}
+\end{figure}
+
+\subsubsection{Weak and strong vowels}
+In contrast to the relatively stable /i a/, the vowel /ə/ is considered weak and pronounced with a relatively open quality and may be approximated as [ɛ]. In stressed environment, the vowel /ə/ is realized as low as [a]. On the other hand, the vowel /ɤ/ can be realized much back and acquired the roundedness to [u] when influenced by high vowel /i/.
+
+\subsubsection{Adoption of Peninsular /e/}
+Many Peninsular languages have mid-front vowel /e/. Krewi does not have this sound as a native phoneme, and speakers tend to emulate such sound more lower as [ɛː], using analogy of finer-stressed pattern of [ə]>[a], with gemination is thought as an overcompensation. Less-educated speaker and in casual speech often uses [ɪ] as the realization of the phoneme.
+
+\subsubsection{High and low back vowel}
+The back vowel phoneme /ɤ/ occupies wide range of realization, mainly influenced by the surrounding vowels and tend to assimilate the realization with the front vowels before it. Such realizations are: after /i/, it becomes
+
+\subsection{Romanization scheme}%
+
+Empty cells are conditions deemed impossible in Krewi.
+
+\begin{longtblr}[
+		halign = c,
+		note{a} = {Only in intervocal context},
+		note{b} = {Only after back coda viz. [ŋ]},
+		note{c} = {Only as pausa},
+	]
+	{
+		rowhead = 1,
+		cells = {halign=c}
+	}
+	\toprule
+	\small{archetype} & \small{lax}          & \small{tense} & \small{\_r} & \small{\_w} & \small{\_\{ɪ, ɛ, \sc{velar}\}} & \small{back}       & \small{long}   \\
+	\midrule
+	ɣ ⟨gh⟩            & Ø, h ⟨h⟩\TblrNote{a} & ɡː ⟨gg⟩       & x ⟨k⟩       & kʷ ⟨k⟩      & kʲ ⟨ky⟩                        & k ⟨gh⟩\TblrNote{b} &                \\
+	ħ ⟨hh⟩            &                      & k ⟨hh⟩        &             &             &                                &                    &                \\
+	d ⟨d⟩             & ɾ ⟨d⟩                & tsː ⟨tt⟩      & t ⟨t⟩       & tˠ ⟨t⟩      & tʃ ⟨c⟩                         &                    &              & \\
+	z ⟨z⟩             &                      &               &             &             & dz ⟨z⟩                         &                    &              & \\
+	ɟ ⟨j⟩             & j ⟨y⟩                & ɟʝ ⟨jj⟩       &             &             &                                &                    &              & \\
+	w ⟨w⟩             &                      &               &             &             & ʝʷ ⟨zz⟩                        &                    & wː ⟨ww⟩        \\
+	n ⟨n⟩             &                      & ɲː ⟨nn⟩       &             & w̃ ⟨w⟩       & ɲ ⟨ny⟩\TblrNote{c}             & ŋ ⟨ng⟩             & nː ⟨nn⟩        \\
+	l ⟨l⟩             &                      &               &             &             &                                &                    & lː ⟨ll⟩        \\
+	r ⟨r⟩             &                      &               &             &             &                                &                    & rː ⟨rr⟩        \\
+	m ⟨m⟩             &                      &               &             &             &                                &                    & mː ⟨mm⟩        \\
+	\bottomrule
+\end{longtblr}
+

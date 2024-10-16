@@ -1,0 +1,70 @@
+\usepackage{geometry}[
+	a4paper,
+	left=3cm,
+	right=2.5cm,
+	top=2cm,
+	bottom=2cm,
+]
+
+\usepackage{fontspec}
+\usepackage{expex}
+\NewCommandCopy{\expexgla}{\gla}
+\usepackage{unicode-math}
+\AtBeginDocument{\RenewCommandCopy{\gla}{\expexgla}}
+
+\setmainfont{SourceSans3}[
+	Extension={.ttf},
+	Path=./config/fonts/,
+	UprightFont={*-Regular},
+	ItalicFont={*-Italic},
+	BoldFont={*-Bold},
+	BoldItalicFont={*-BoldItalic},
+	Numbers=OldStyle,
+	Kerning=On,
+	Ligatures=Common,
+]
+
+%\setmathfont{LibertinusMath}[
+%	Extension={.otf},
+%	Path=./config/fonts/,
+%	Scale=1
+%]
+
+\usepackage{graphicx}
+\usepackage[all]{nowidow}
+
+\usepackage{fancyhdr}
+\fancyhf{} %clears the default
+
+% \renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+%%% SECTION FORMATTING
+\usepackage{titlesec}
+
+\newcommand{\marginsecnumber}[1]{%
+	\makebox[0pt][r]{#1\hspace{1em}}%
+}
+
+\titleformat{\section}[display]
+{\filcenter\bfseries}
+{\thesection}
+{0pt}
+{}
+
+\titleformat{\subsection}[runin]
+{\bfseries}
+{\marginsecnumber\thesubsection}
+{0pt}
+{}
+[.]
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{\marginsecnumber\thesubsubsection}
+{0pt}
+{}
+
+
+
+
