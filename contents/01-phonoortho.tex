@@ -15,7 +15,7 @@ Krewi consonants are divided into 11 contrastive units as depicted in the matrix
 	\small{nasal}      & m              & n                     &                          &                 \\
 	\small{obstruents} &                & d dz                  & (dʒ)                     & x ħ (k)         \\
 	\small{emphatics}  &                & ts                    & ɟʝ (tɕ)                  & kʷ kʲ           \\
-	\small{continuant} & w [w ʝʷ]       & l r                   & j [j ɟ]                  &                 \\
+	\small{continuant} & w [w ʝʷ]       & l r                   & j [j ɟ]                                    \\
 	\bottomrule[1pt]
 \end{longtblr}
 
@@ -35,21 +35,10 @@ Krewi vowels had four native phonemic monophthongs /i ə a ɤ/ and one long /eː
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}
-		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (e) at (0,0) {};
-		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (i) at (-2,2) {};
-		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (o) at (2,1) {};
-
-		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (a) at (0,-1) {};
-		\node[above=2pt of e] {ə};
-		\node[left=2pt of i] {i};
-		\node[right=2pt of o] {ɤ};
-		\node[left=2pt of a] {a};
-		\node[draw,fill,circle,inner sep=0pt,minimum size=4pt] (ee) at ($(i)!0.4!(a)$) {};
-		\node[left=2pt of ee] {(eː)};
-
-		\draw (e) -- (i) -- (o) -- (e);
-		\draw (a) -- (e);
-		\draw (i) -- (a);
+		\coordinate (hf) at (0,2);
+		\coordinate (hb) at (2,2);
+		\coordinate (lf) at (1,0);
+		\coordinate (lb) at (2,0);
 	\end{tikzpicture}
 	\caption{Mapped vowels}
 \end{figure}
